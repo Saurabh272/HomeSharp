@@ -1,0 +1,120 @@
+### Project Details using Project Slug
+POST {{baseUrl}}/project-details
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "slug": "lodha-adrina"
+}
+
+### Index Project Details using Project ID
+POST {{baseUrl}}/index-project
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "projectId": "ad96c263-2a1c-457f-aa61-3efea958f517"
+}
+
+### Index Project Details using Wing ID
+POST {{baseUrl}}/index-project
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "wingId": "097febfe-ed57-41ac-bd16-9730ccb68999"
+}
+
+### Index Project Details using Configuration ID
+POST {{baseUrl}}/index-project
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "configurationId": "6a59a772-d8cd-4171-befe-117a80f15918"
+}
+
+### Index Project Details using Developer ID
+POST {{baseUrl}}/index-project
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "developerId": "4236659e-71f0-45ee-bf00-598478fa02eb"
+}
+
+### Index Project Details using Address ID
+POST {{baseUrl}}/index-project
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "addressId": "8faff7e2-0011-468b-a3ab-e377cc0b1639"
+}
+
+### Index Developer Details using Developer ID
+POST {{baseUrl}}/index-developer
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "developerId": "004aaff1-0326-478b-ab39-33a906778c51"
+}
+
+### Index Micro Market Details using Developer ID
+POST {{baseUrl}}/index-micro-market
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "microMarketId": "90b3a6b6-37b3-47aa-8d6c-77d14117bdb3"
+}
+
+### Reindex All Projects
+POST {{baseUrl}}/index-multiple-projects
+Authorization: Bearer {{directusToken}}
+
+
+### Reindex All Developers
+POST {{baseUrl}}/index-multiple-developers
+Authorization: Bearer {{directusToken}}
+
+### Reindex All Micro Markets
+POST {{baseUrl}}/index-multiple-micro-markets
+Authorization: Bearer {{directusToken}}
+
+### Reindex List of Projects
+POST {{baseUrl}}/index-multiple-projects
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "projectIds": [
+    "ad96c263-2a1c-457f-aa61-3efea958f517",
+    "06ba9169-e9d8-4fba-8670-379485dc7653"
+  ]
+}
+
+### Reindex List of Developers
+POST {{baseUrl}}/index-multiple-developers
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "developerIds": [
+    "4236659e-71f0-45ee-bf00-598478fa02eb",
+    "4236659e-71f0-45ee-bf00-598478fa02eb"
+  ]
+}
+
+### Reindex List of Micro Markets
+POST {{baseUrl}}/index-multiple-micro-markets
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "microMarketIds": [
+    "90b3a6b6-37b3-47aa-8d6c-77d14117bdb3",
+    "90b3a6b6-37b3-47aa-8d6c-77d14117bdb3"
+  ]
+}

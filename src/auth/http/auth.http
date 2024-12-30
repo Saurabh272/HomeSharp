@@ -1,0 +1,53 @@
+### Signup (Send OTP)
+POST {{baseUrl}}/auth/send-otp
+Content-Type: application/json
+
+{
+  "username": "9100000000"
+}
+
+### Resend OTP
+POST {{baseUrl}}/auth/resend-otp
+Content-Type: application/json
+
+{
+  "username": "9100000000"
+}
+
+### Verify OTP
+POST {{baseUrl}}/auth/verify-otp
+Content-Type: application/json
+
+{
+  "username": "9100000000",
+  "otp": "111111"
+}
+
+### Refresh Token
+POST {{baseUrl}}/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refreshToken}}"
+}
+
+### Logout (Revoke tokens)
+POST {{baseUrl}}/auth/logout
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+### Delete Account with reason
+POST {{baseUrl}}/auth/delete-account
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "reason": "I don't like the app."
+}
+
+### Delete Account without reason
+POST {{baseUrl}}/auth/delete-account
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{}

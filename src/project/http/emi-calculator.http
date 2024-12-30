@@ -1,0 +1,9 @@
+### emi-calculator
+POST {{baseUrl}}/emi-calculator
+Content-Type: application/json
+
+{
+  "principal": 270000,
+  "interestRate": 8.5,
+  "tenure": 6
+}

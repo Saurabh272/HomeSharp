@@ -1,0 +1,88 @@
+### Request Tour
+POST {{baseUrl}}/get-tour-availability
+Content-Type: application/json
+
+{
+  "slug": "paramount"
+}
+
+### Get Tour Details
+POST {{baseUrl}}/get-tour-details
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "id": "74382bc6-3333-48c9-bb9e-053b625daa4d"
+}
+
+### Get All Tours
+POST {{baseUrl}}/get-tours
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "page": 1,
+  "limit": 10
+}
+
+### Create Tour
+POST {{baseUrl}}/create-tour
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "slug": "paramount",
+  "day": {
+    "date": 5,
+    "month": "July",
+    "year": 2023
+  },
+  "timeSlot": "10:00",
+  "visitType": {
+    "value": "IN_PERSON"
+  }
+}
+
+### Reschedule Tour
+PATCH {{baseUrl}}/reschedule-tour
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "id": "4b41897a-628e-40c3-87ef-1ffc1db284b5",
+  "day": {
+    "day": "Tue",
+    "date": 2,
+    "month": "November",
+    "year": 2023
+  },
+  "timeSlot": "15:30",
+  "visitType": {
+    "value": "IN_PERSON"
+  }
+}
+
+### Cancel Tour Status - Changed Mind
+PATCH {{baseUrl}}/cancel-tour
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "id": "cda3a766-b2d7-4492-865e-53bbd55898b2",
+  "cancellationReason": {
+    "value": "CHANGED_MIND"
+  }
+}
+
+### Cancel Tour Status - Other Reason
+PATCH {{baseUrl}}/cancel-tour
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "id": "eef67e71-f3c2-4929-a35d-4b70fae435b5",
+  "cancellationReason": {
+    "value": "OTHER"
+  },
+  "cancellationReasonDetails": "I don't like the color of the walls"
+}

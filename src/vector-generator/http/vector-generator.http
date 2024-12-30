@@ -1,0 +1,22 @@
+### Generate Vectors
+POST {{baseUrl}}/generate-vector
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+### Get Similar Projects
+POST {{baseUrl}}/get-similar-projects
+Content-Type: application/json
+
+{
+    "configurationId": "4844c843-839d-4d3d-858b-a6ef3b69aa0e"
+}
+
+### Get Similar Projects Based on Project Slug
+POST {{baseUrl}}/get-similar-projects
+Content-Type: application/json
+
+{
+    "projectSlug": "aryavarta"
+}

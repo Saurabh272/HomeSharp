@@ -1,0 +1,57 @@
+### Typesense Search
+POST http://localhost:4100/search
+Content-Type: application/json
+
+{
+}
+
+### Get Nearby Localities
+GET  {{baseUrl}}/nearby-localities
+Content-Type: application/json
+
+{}
+
+### Get Slugs based on Type - projects
+
+POST {{baseUrl}}/slugs
+Content-Type: application/json
+
+{
+  "type": "projects"
+}
+
+### Get Slugs based on Type - categories
+
+POST {{baseUrl}}/slugs
+Content-Type: application/json
+
+{
+  "type": "categories"
+}
+
+### Get Slugs based on Type - developers
+
+POST {{baseUrl}}/slugs
+Content-Type: application/json
+
+{
+  "type": "developers"
+}
+
+### Get Slugs based on Type - collections
+
+POST {{baseUrl}}/slugs
+Content-Type: application/json
+
+{
+  "type": "collections"
+}
+
+### Get Collection details based on slug
+
+POST {{baseUrl}}/collection-details
+Content-Type: application/json
+
+{
+  "slug": "new-launches"
+}

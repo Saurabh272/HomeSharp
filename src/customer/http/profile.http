@@ -1,0 +1,16 @@
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NTIzMGIwLTgyMzYtNDFkMy05NTUyLWJhYWEzM2ViMDYwNyIsImlhdCI6MTY4OTA3MDU4NCwiZXhwIjoxNjg5Njc1Mzg0fQ.pK2Ks70fGGGHXjMER-u-N715fJhMh7n2Nk0xN_765eI
+
+###  Update profile with name
+PUT {{baseUrl}}/profile
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "name": "testing"
+}
+
+###  Get profile details (name and email)
+
+GET {{baseUrl}}/profile
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json

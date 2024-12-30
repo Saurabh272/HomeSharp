@@ -1,0 +1,181 @@
+### Developer and Project Collections (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "",
+  "developer": "Davis - Beer",
+  "microMarket": "test",
+  "wings": {
+    "min": 3,
+    "max": 5
+  }
+}
+
+### Developer Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "Developers"
+}
+
+### Relationship Managers Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "relationship_managers"
+}
+
+### Customers Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "customers"
+}
+
+### Feedback Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "feedback"
+}
+
+### Support Request Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "support_request"
+}
+
+### Customer Attempts Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "customer_attempts"
+}
+
+
+### Inquiries Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "inquiries"
+}
+
+### Seo Properties Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "seo_properties"
+}
+
+### Addresses Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "addresses"
+}
+
+### Contact Details Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "Contact_Details"
+}
+
+### Features Categories Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "features"
+}
+
+
+### Rera Stage Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "rera_stage"
+}
+
+
+### Categories Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "Categories"
+}
+
+
+### Wishlist Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "wishlist"
+}
+
+
+### Wishlist-Projects Collection (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "wishlist_projects"
+}
+
+
+### all Collections (Send OTP)
+POST {{baseUrl}}/seeder
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "noOfDataToBeSeed": 1,
+  "collection": "all"
+}

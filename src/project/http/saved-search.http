@@ -1,0 +1,85 @@
+
+### create a new saved-search
+POST {{baseUrl}}/saved-search
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "name": "MySavedSearch",
+    "filters": {
+        "searchString": "Luxury Apartment",
+        "microMarket": "Downtown",
+        "microMarkets": ["Suburb A", "Suburb B"],
+        "bedRooms": [2, 3],
+        "houseType": "Condo",
+        "bathRooms": [2, 2.5, 3],
+        "categories": ["Residential", "New Construction"],
+        "launchStatus": ["Upcoming", "Under Construction"],
+        "price": [150000, 300000],
+        "developer": "ABC Developers",
+        "bounds": {
+            "sw": {
+                "lat": 34.0522,
+                "lng": -118.2437
+            },
+            "ne": {
+                "lat": 34.1030,
+                "lng": -118.1907
+            }
+        },
+        "distance": 5
+    }
+}
+
+
+### get all saved-search
+GET {{baseUrl}}/saved-search
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  
+}
+
+### get details of single saved-search
+GET {{baseUrl}}/saved-search/7862df64-c372-4624-ad47-31fa171f052c
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  
+}
+
+### update saved-search
+PUT {{baseUrl}}/saved-search/c08a3d21-5fab-4a99-b5ef-0ca12d0fed49
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "filters": {
+        "categories": ["Residential", "New Construction"],
+        "launchStatus": ["Upcoming", "Under Construction"],
+        "price": [150000, 300000],
+        "developer": "ABC ",
+        "bounds": {
+            "sw": {
+                "lat": 34.0522,
+                "lng": -118.243
+            },
+            "ne": {
+                "lat": 34.103,
+                "lng": -118.190
+            }
+        },
+        "distance": 5
+    }
+}
+
+### delete saved-search
+DELETE {{baseUrl}}/saved-search/a48ff2d0-9015-4fac-b91b-5a8a4143b98a
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  
+}

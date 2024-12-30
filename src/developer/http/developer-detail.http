@@ -1,0 +1,7 @@
+### Deevloper Details using Developer Slug
+POST {{baseUrl}}/developer-details
+Content-Type: application/json
+
+{
+    "slug": "aim-realtors"
+}

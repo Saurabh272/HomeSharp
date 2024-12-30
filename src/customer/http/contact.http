@@ -1,0 +1,138 @@
+###  contact agent
+POST {{baseUrl}}/contact-agent
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "projectSlug": "project",
+  "message": "test message for agent for help"
+}
+
+###  contact agent
+POST {{baseUrl}}/contact-agent
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "projectSlug": "project",
+  "message": ""
+}
+
+### Contact Developer
+POST {{baseUrl}}/contact-developer
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "name": "John Doe",
+    "message": "Message for developer from authorized user",
+    "developerSlug": "gauri-developer"
+}
+
+### Create Inquiry
+POST {{baseUrl}}/inquiry
+Content-Type: application/json
+
+{
+  "name": "test inquiry",
+  "email": "testinquiry3@example.com",
+  "subject": "test subject"
+}
+
+### Create Support Request
+POST {{baseUrl}}/support-request
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+test name
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="subject"
+
+test subject
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="issueDescription"
+
+test issueDescription
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="attachment"; filename="dummy.pdf"
+Content-Type: image/png
+
+< ./dummy.pdf
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Add Feedback
+POST {{baseUrl}}/feedback
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="feedbackCategory"
+
+test
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="subject"
+
+test subtect 
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="issueDescription"
+
+test issueDescription
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="attachment"; filename="dummy.pdf"
+Content-Type: image/png
+
+< ./dummy.pdf
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### connect-request
+POST {{baseUrl}}/connect-request
+Content-Type: application/json
+
+{
+  "type": "discussRequirementRequestV2",
+  "payload": {
+    "name": "Test",
+    "phoneNumber": "987654321",
+    "emailAddress": "test@test.com",
+    "location": "Juhu",
+    "message":"This is a test message",
+    "configuration": "1bhk"
+  }
+}
+
+### Add Leads for Connect Requests
+POST {{baseUrl}}/leads
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+
+### Update Leads for Connect Requests
+PATCH {{baseUrl}}/leads
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+### UTM Details Update for Single Lead
+POST {{baseUrl}}/utm-details
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "payload": {
+    "utm_source": "source",
+    "utm_medium": "medium",
+    "utm_campaign": "campaign"
+  }
+}
+
+
+### Bulk UTM Details Update
+POST {{baseUrl}}/bulk-utm-details
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}

@@ -1,0 +1,37 @@
+### Add project in wishlist
+POST {{baseUrl}}/wishlist/project
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "projectSlug": "arkade-prime",
+  "remove": false
+}
+
+### Remove project from wishlist
+POST {{baseUrl}}/wishlist/project
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "projectSlug": "arkade-prime",
+  "remove": true
+}
+
+
+### get wishlist projects
+POST {{baseUrl}}/wishlist/listing
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{}
+
+### get wishlist projects
+POST {{baseUrl}}/wishlist/listing
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "page": 1,
+  "limit": 5
+}

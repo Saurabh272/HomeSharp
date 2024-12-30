@@ -1,0 +1,27 @@
+### SEO Properties using Slug
+POST {{baseUrl}}/seo-properties
+Content-Type: application/json
+
+{
+    "slug": "tilak-nagar"
+}
+
+### Validate SEO Properties using Slug
+POST {{baseUrl}}/seo-properties/validate
+Content-Type: application/json
+Authorization: Bearer {{directusToken}}
+
+{
+  "payload": {
+    "slug": " tilak-nagar"
+  }
+}
+
+### Convert uppercase to lowercase
+POST {{baseUrl}}/seo-properties/lowercase-conversion
+Content-Type: application/json
+Authorization: Bearer {{directusToken}}
+
+{
+
+}

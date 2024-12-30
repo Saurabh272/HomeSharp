@@ -1,0 +1,15 @@
+### Indexing Cleaup - Reindexing Data
+POST {{baseUrl}}/indexing-cleanup
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+### Indexing Cleanup - Recreating Collections and Inserting Data
+POST {{baseUrl}}/indexing-cleanup
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "recreateCollections": true
+}

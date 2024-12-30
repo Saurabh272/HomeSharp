@@ -1,0 +1,56 @@
+### all error watermarks
+
+POST {{baseUrl}}/retry-failed-watermark
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+### watermarks for particular image
+POST {{baseUrl}}/apply-watermark
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{
+  "imageIds": [
+    "13439fa8-8297-497b-8a06-6d18d6e31f1a"
+  ]
+}
+
+### watermarks for all images
+POST {{baseUrl}}/apply-watermark
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+### all pending water-marks
+
+POST {{baseUrl}}/pending-watermark
+Authorization: Bearer {{directusToken}}
+Content-Type: application/json
+
+{}
+
+
+### apply-watermarks on Developers
+POST {{baseUrl}}/apply-watermark
+Content-Type: application/json
+Authorization: Bearer {{directusToken}}
+
+{
+  "developerIds": [
+    "98002006-ae93-41fe-a947-cfead037b8c9"
+  ]
+}
+
+### apply-watermarks on Projects
+POST {{baseUrl}}/apply-watermark
+Content-Type: application/json
+Authorization: Bearer {{directusToken}}
+
+{
+  "projectIds": [
+    "9d576ca2-f0cf-4884-91a9-87e9435bfcdd"
+  ]
+}
